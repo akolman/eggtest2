@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+	  <Version>0.0.7</Version>
+	  <Authors>Andrew Kolman</Authors>
+	  <RepositoryUrl>https://github.com/akolman/EggDotNet</RepositoryUrl>
+	  <RepositoryType>git</RepositoryType>
+	  <Title>EggDotNet</Title>
+	  <Description>An EGG file format extraction library for DotNet.</Description>
+	  <PackageIcon>eggdotnet.png</PackageIcon>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+	  <PackageReleaseNotes>RELEASES.txt</PackageReleaseNotes>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+	  <EnableNETAnalyzers>True</EnableNETAnalyzers>
+	  <AnalysisLevel>latest-recommended</AnalysisLevel>
+	  <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
+	  <GenerateDocumentationFile>True</GenerateDocumentationFile>
+	  <PackageTags>egg, compression, alz</PackageTags>
+  </PropertyGroup>
+
+	
+  <ItemGroup>
+    <None Include="..\..\eggdotnet.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+	<None Include="..\..\CREDITS.txt">
+		<Pack>True</Pack>
+		<PackagePath>\</PackagePath>
+	</None>
+	<None Include="..\..\RELEASES.txt">
+		<Pack>True</Pack>
+		<PackagePath>\</PackagePath>
+	</None>	  
+  </ItemGroup>
+
+</Project>

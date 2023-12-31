@@ -1,0 +1,45 @@
+0.0.1-initial (2023-11-20)
+Initial release with following features:
++EGG extraction
++AES decryption
++Split archive
++BZip and Deflate compression
+=======================================================================
+0.0.2-beta (2023-11-21)
+Fixes and added features
++Fixed issue with AES128
++Added support for non-UTF8 filenames
++Added support for global comments
++Added ZIP encryption
+=======================================================================
+0.0.3-beta (2023-11-22)
+Fixes and added features
++Added ALZ support, with limitations - for example, no split ALZs.
++Fixed bug preventing extraction
+=======================================================================
+0.0.4-beta (2023-11-29)
++Added LZMA support.
+=======================================================================
+0.0.5-beta (2023-12-06)
++Added checksum feature.
++Added EggArchiveEntry.Id member and EggArchive.GetEntry method.
++Removed EggArchive(filepath) constructor and moved to static EggFile method.
++Added Windows file attributes to EggArchive.ExternalAttributes.
++Fixed issue caused by data-less entries (e.g. empty directories).
++Added SOLID header warning.  Extraction likely to fail.
+=======================================================================
+0.0.6-beta (2023-12-19)
++Modified to use correct compiler for netstandard version.  This removes nullability in exposed members for netstandard2.0.  Nullability remains for netstandard 2.1.
++Removed custom Eggception base Exception class.
+=======================================================================
+0.0.7-beta (2023-12-31)
++Added additional tests to EggDotNet.Tests.
++Fixed regression prevent decompression of store (uncompressed) entries.
++Fixed bug where additional data may be returned from decompression stream.
++Added EggArchiveEntry.CompressionMethod member.
++Fixed missing Alz property mappings and implemented CRC check for ALZ.
++Added windows file attribute setting for EggFile methods.
++Added documentation regarding ExternalAttributes.
++Added EggArchiveEntry.ToString() override.
++Added benchmark utility.
++Misc cleanup on code.
